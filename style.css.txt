@@ -1,29 +1,45 @@
-/* style.css */
+/* style.css - Colorful + Animated Version */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f9;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  animation: fadeIn 2s ease-in; /* Page fade-in */
 }
 
 header {
-  background: #2c3e50;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
   color: white;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  animation: slideDown 1.5s ease-out; /* Header slides down */
 }
 
 section {
-  padding: 40px;
-  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 80%;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: scale(1.05); /* Zoom effect */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
 h2 {
-  color: #2c3e50;
+  color: #ffd700;
+  margin-bottom: 15px;
+  animation: glow 2s infinite alternate; /* Glowing headings */
 }
 
 p {
-  color: #555;
+  color: #f0f0f0;
 }
 
 ul {
@@ -32,21 +48,53 @@ ul {
 }
 
 li {
-  margin: 8px 0;
+  margin: 10px 0;
+  color: #00ffff;
+  animation: fadeInUp 1s ease-in;
 }
 
 footer {
-  background: #2c3e50;
+  background: linear-gradient(90deg, #ee0979, #ff6a00);
   color: white;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
+  margin-top: 20px;
+  animation: slideUp 1.5s ease-out;
 }
 
 a {
-  color: #2980b9;
+  color: #00ffff;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff;
+}
+
+/* 🔹 Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #ffd700; }
+  to { text-shadow: 0 0 20px #ff4500; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
