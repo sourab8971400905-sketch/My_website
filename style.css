@@ -1,22 +1,51 @@
-/* style.css - Colorful + Animated Version */
+/* 🔹 Global Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Blue gradient */
   color: #fff;
   animation: fadeIn 2s ease-in; /* Page fade-in */
 }
 
+/* 🔹 Header */
 header {
-  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  background: linear-gradient(90deg, #ff6a00, #ee0979); /* Orange to pink */
   color: white;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-  animation: slideDown 1.5s ease-out; /* Header slides down */
+  animation: slideDown 1.5s ease-out;
 }
 
+/* 🔹 Navigation Bar */
+nav {
+  margin-top: 15px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background: rgba(255,255,255,0.1);
+}
+
+nav a:hover {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 10px #00ffff;
+  transform: scale(1.1);
+}
+
+/* 🔹 Sections */
 section {
   background: rgba(255, 255, 255, 0.1);
   margin: 30px auto;
@@ -28,20 +57,22 @@ section {
 }
 
 section:hover {
-  transform: scale(1.05); /* Zoom effect */
+  transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
-h2 {
-  color: #ffd700;
-  margin-bottom: 15px;
-  animation: glow 2s infinite alternate; /* Glowing headings */
+/* 🔹 Headings */
+h1, h2 {
+  color: #ffd700; /* Gold headings */
+  animation: glow 2s infinite alternate;
 }
 
+/* 🔹 Paragraphs */
 p {
   color: #f0f0f0;
 }
 
+/* 🔹 Lists */
 ul {
   list-style-type: none;
   padding: 0;
@@ -53,6 +84,20 @@ li {
   animation: fadeInUp 1s ease-in;
 }
 
+/* 🔹 Images */
+img {
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #ffd700;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/* 🔹 Footer */
 footer {
   background: linear-gradient(90deg, #ee0979, #ff6a00);
   color: white;
@@ -62,6 +107,7 @@ footer {
   animation: slideUp 1.5s ease-out;
 }
 
+/* 🔹 Links */
 a {
   color: #00ffff;
   text-decoration: none;
